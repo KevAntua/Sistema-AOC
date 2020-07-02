@@ -28,7 +28,9 @@ def home():
     Cue6= os.path.join(app.config['UPLOAD_FOL'], 'CuestionarioE6.pdf')
     Cue7= os.path.join(app.config['UPLOAD_FOL'], 'CuestionarioE7.pdf')
     Cue8= os.path.join(app.config['UPLOAD_FOL'], 'CuestionarioE8.pdf')
-    return render_template('home.html', user_video=vid1, user_video3=vid3, user_video4=vid4, user_video5=vid5, user_video6=vid6, user_video7=vid7, user_video8=vid8, Cuest1=Cue1, Cuest2=Cue2, Cuest3=Cue3, Cuest4=Cue4, Cuest5=Cue5, Cuest6=Cue6, Cuest7=Cue7, Cuest8=Cue8 )
+    Expo= os.path.join(app.config['UPLOAD_FOL'], 'Expo3Parcial.pdf')
+    Expo1= os.path.join(app.config['UPLOAD_FOL'], 'Expo3Parcial2.pdf')
+    return render_template('home.html', user_video=vid1, user_video3=vid3, user_video4=vid4, user_video5=vid5, user_video6=vid6, user_video7=vid7, user_video8=vid8, Cuest1=Cue1, Cuest2=Cue2, Cuest3=Cue3, Cuest4=Cue4, Cuest5=Cue5, Cuest6=Cue6, Cuest7=Cue7, Cuest8=Cue8, Expo=Expo, Expo2=Expo1 )
 
 @app.route('/about') 
 def about():
